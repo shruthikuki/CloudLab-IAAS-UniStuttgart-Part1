@@ -4,5 +4,5 @@ sudo service httpd start
 sudo chkconfig httpd on
 wget https://wordpress.org/latest.tar.gz
 tar -xzf latest.tar.gz
-mv wp-config.php wordpress/
+cp wordpress/wp-config-sample.php wordpress/wp-config.php
 sudo mv wordpress/* /var/www/html/
